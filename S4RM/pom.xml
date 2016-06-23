@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.osaem</groupId>
-	<artifactId>wise</artifactId>
+	<artifactId>s4rm</artifactId>
 	<name>OSAEM-WISE</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
@@ -73,13 +73,13 @@
 			<version>${mysql.connector-version}</version>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 		<!-- Influx DB Connector -->
 		<dependency>
-            <groupId>org.influxdb</groupId>
-            <artifactId>influxdb-java</artifactId>
-            <version>2.2</version>
-        </dependency>
+			<groupId>org.influxdb</groupId>
+			<artifactId>influxdb-java</artifactId>
+			<version>2.2</version>
+		</dependency>
 
 		<!-- Apache Commons DBCP -->
 		<dependency>

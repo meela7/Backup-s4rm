@@ -29,6 +29,6 @@
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
 	<context:annotation-config />	
-	<context:component-scan base-package="com.s4rm.wise.controller" />
+	<context:component-scan base-package="org.cilab.s4rm.controller" />
 
 </beans:beans>

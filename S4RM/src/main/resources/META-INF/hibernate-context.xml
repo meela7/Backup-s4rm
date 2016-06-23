@@ -51,91 +51,64 @@
 		</beans:property>
 	</beans:bean>
 
-	<beans:bean id="dataSetDao" class="com.s4rm.wise.dao.impl.DataSetDAOImpl">
+	<beans:bean id="tagDao" class="org.cilab.s4rm.dao.impl.TagDAOImpl">
 		<beans:constructor-arg>
 			<beans:ref bean="sessionFactory" />
 		</beans:constructor-arg>
 	</beans:bean>
-	<beans:bean id="dataSetService"
-		class="com.s4rm.wise.service.impl.DataSetServiceImpl">
-		<beans:property name="dataSetDao" ref="dataSetDao" />
+	<beans:bean id="tagService"
+		class="org.cilab.s4rm.service.impl.TagServiceImpl">
+		<beans:property name="tagDao" ref="tagDao" />
 	</beans:bean>
 
-	<beans:bean id="variableDao" class="com.s4rm.wise.dao.impl.VariableDAOImpl">
+	<beans:bean id="userDao" class="org.cilab.s4rm.dao.impl.UserDAOImpl">
 		<beans:constructor-arg>
 			<beans:ref bean="sessionFactory" />
 		</beans:constructor-arg>
 	</beans:bean>
-
-	<beans:bean id="variableService"
-		class="com.s4rm.wise.service.impl.VariableServiceImpl">
-		<beans:property name="variableDao" ref="variableDao" />
+	<beans:bean id="userService"
+		class="org.cilab.s4rm.service.impl.UserServiceImpl">
+		<beans:property name="userDao" ref="userDao" />
 	</beans:bean>
-
-	<beans:bean id="unitDao" class="com.s4rm.wise.dao.impl.UnitDAOImpl">
+	
+	<beans:bean id="metaDao" class="org.cilab.s4rm.dao.impl.MetaDAOImpl">
 		<beans:constructor-arg>
 			<beans:ref bean="sessionFactory" />
 		</beans:constructor-arg>
 	</beans:bean>
-	<beans:bean id="unitService" class="com.s4rm.wise.service.impl.UnitServiceImpl">
-		<beans:property name="unitDao" ref="unitDao" />
+	<beans:bean id="metaService"
+		class="org.cilab.s4rm.service.impl.MetaServiceImpl">
+		<beans:property name="metaDao" ref="metaDao" />
 	</beans:bean>
-
-	<beans:bean id="entityDao" class="com.s4rm.wise.dao.impl.EntityDAOImpl">
+	
+	<beans:bean id="sensorDao" class="org.cilab.s4rm.dao.impl.SensorDAOImpl">
 		<beans:constructor-arg>
 			<beans:ref bean="sessionFactory" />
 		</beans:constructor-arg>
 	</beans:bean>
-	<beans:bean id="entityService"
-		class="com.s4rm.wise.service.impl.EntityServiceImpl">
-		<beans:property name="entityDao" ref="entityDao" />
+	<beans:bean id="sensorService"
+		class="org.cilab.s4rm.service.impl.SensorServiceImpl">
+		<beans:property name="sensorDao" ref="sensorDao" />
 	</beans:bean>
-
-	<beans:bean id="sourceDao" class="com.s4rm.wise.dao.impl.SourceDAOImpl">
+	
+	<beans:bean id="streamDao" class="org.cilab.s4rm.dao.impl.StreamDAOImpl">
 		<beans:constructor-arg>
 			<beans:ref bean="sessionFactory" />
 		</beans:constructor-arg>
 	</beans:bean>
-	<beans:bean id="sourceService"
-		class="com.s4rm.wise.service.impl.SourceServiceImpl">
-		<beans:property name="sourceDao" ref="sourceDao" />
+	<beans:bean id="streamService"
+		class="org.cilab.s4rm.service.impl.StreamServiceImpl">
+		<beans:property name="streamDao" ref="streamDao" />
 	</beans:bean>
-
-	<beans:bean id="siteDao" class="com.s4rm.wise.dao.impl.SiteDAOImpl">
+	
+	<beans:bean id="logDao" class="org.cilab.s4rm.dao.impl.LogDAOImpl">
 		<beans:constructor-arg>
 			<beans:ref bean="sessionFactory" />
 		</beans:constructor-arg>
 	</beans:bean>
-	<beans:bean id="siteService" class="com.s4rm.wise.service.impl.SiteServiceImpl">
-		<beans:property name="siteDao" ref="siteDao" />
-	</beans:bean>
-
-	<beans:bean id="methodDao" class="com.s4rm.wise.dao.impl.MethodDAOImpl">
-		<beans:constructor-arg>
-			<beans:ref bean="sessionFactory" />
-		</beans:constructor-arg>
-	</beans:bean>
-	<beans:bean id="methodService"
-		class="com.s4rm.wise.service.impl.MethodServiceImpl">
-		<beans:property name="methodDao" ref="methodDao" />
-	</beans:bean>
-	<beans:bean id="instrumentDao" class="com.s4rm.wise.dao.impl.InstrumentDAOImpl">
-		<beans:constructor-arg>
-			<beans:ref bean="sessionFactory" />
-		</beans:constructor-arg>
-	</beans:bean>
-	<beans:bean id="instrumentService"
-		class="com.s4rm.wise.service.impl.InstrumentServiceImpl">
-		<beans:property name="instrumentDao" ref="instrumentDao" />
-	</beans:bean>
-	<beans:bean id="predictionDao" class="com.s4rm.wise.dao.impl.PredictionDAOImpl">
-		<beans:constructor-arg>
-			<beans:ref bean="sessionFactory" />
-		</beans:constructor-arg>
-	</beans:bean>
-	<beans:bean id="predictionService"
-		class="com.s4rm.wise.service.impl.PredictionServiceImpl">
-		<beans:property name="predictionDao" ref="predictionDao" />
+	<beans:bean id="logService"
+		class="org.cilab.s4rm.service.impl.LogServiceImpl">
+		<beans:property name="logDao" ref="logDao" />
 	</beans:bean>
 
 </beans:beans>
